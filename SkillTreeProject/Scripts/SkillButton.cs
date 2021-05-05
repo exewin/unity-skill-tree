@@ -16,10 +16,7 @@ namespace SkillTreeProject
         [SerializeField] private List<SkillButton> unlockableSkills = new List<SkillButton>();
         [SerializeField] private string skillName;
 
-        void Awake()
-        {
-            UpdateText();
-        }
+        void Awake() => UpdateText();
 
         void OnValidate() => gameObject.name = skillName;
 
