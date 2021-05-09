@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerChanger : MonoBehaviour
 {
 
+    public static event Action playerChangeEvent;
     const string playerTag = "Player";
 
     void Awake()
@@ -16,9 +18,10 @@ public class PlayerChanger : MonoBehaviour
         SelectPlayer(0);
     }
 
-    void SelectPlayer(int index)
+    public void SelectPlayer(int index)
     {
         Players.selectedPlayer = Players.players[index];
+        playerChangeEvent?.Invoke();
     }
 
 

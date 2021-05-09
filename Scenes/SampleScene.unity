@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5/5
+  m_Text: 0/3
 --- !u!222 &57576377
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -256,9 +256,9 @@ MonoBehaviour:
   requiredSkillPoints: 5
   skillTreeController: {fileID: 375581929}
   skills:
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
+  - {fileID: 11400000, guid: 0ffbe84848972df4ba83645300f4e993, type: 2}
+  - {fileID: 11400000, guid: 5d335b95e8c2cc94daf444b5afe3f742, type: 2}
+  - {fileID: 11400000, guid: 45087f53468a4c344a894ee6a2173984, type: 2}
   unlockableSkills: []
   skillName: Inferno Mastery
 --- !u!114 &139476385
@@ -410,8 +410,8 @@ MonoBehaviour:
   skillTreeController: {fileID: 375581929}
   skills:
   - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
+  - {fileID: 11400000, guid: 688feddf11514064aa4e2b2edcf1bd1e, type: 2}
+  - {fileID: 11400000, guid: 119c4a53c503ffb46a6d4865bf04b049, type: 2}
   unlockableSkills: []
   skillName: Iron Skin
 --- !u!114 &162216187
@@ -515,6 +515,7 @@ GameObject:
   m_Component:
   - component: {fileID: 375581928}
   - component: {fileID: 375581929}
+  - component: {fileID: 375581930}
   m_Layer: 5
   m_Name: Tree1
   m_TagString: Untagged
@@ -539,6 +540,7 @@ RectTransform:
   - {fileID: 139476383}
   - {fileID: 1733603042}
   - {fileID: 162216185}
+  - {fileID: 551915679}
   m_Father: {fileID: 464779432}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -557,6 +559,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76de5f92e7bf4d54a9c85ed4e7ecf9d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &375581930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375581927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd1198512454b343ac83b7ef02d8e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &384666611
@@ -1000,7 +1014,7 @@ MonoBehaviour:
   requiredSkillPoints: 5
   skillTreeController: {fileID: 375581929}
   skills:
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
+  - {fileID: 11400000, guid: cb2caa1b774a3f04bba426a5a24678fc, type: 2}
   unlockableSkills:
   - {fileID: 139476384}
   skillName: Inferno
@@ -1094,6 +1108,157 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551395703}
+  m_CullTransparentMesh: 0
+--- !u!1 &551915678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 551915679}
+  - component: {fileID: 551915683}
+  - component: {fileID: 551915682}
+  - component: {fileID: 551915681}
+  - component: {fileID: 551915680}
+  m_Layer: 5
+  m_Name: Fire Rain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &551915679
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551915678}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1221069236}
+  - {fileID: 1526684584}
+  m_Father: {fileID: 375581928}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 49.9, y: -84}
+  m_SizeDelta: {x: 32, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &551915680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551915678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d353565cc56f94eb8f82a4fa332569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addedSkillPointsText: {fileID: 1526684585}
+  requiredSkillPoints: 10
+  skillTreeController: {fileID: 375581929}
+  skills:
+  - {fileID: 11400000, guid: 9a3ee781e8825d84e917abb5bbfcb2ca, type: 2}
+  unlockableSkills: []
+  skillName: Fire Rain
+--- !u!114 &551915681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551915678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 551915682}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 551915680}
+        m_MethodName: AddPoint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &551915682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551915678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0d852f5493cecf94a90183f3f83ce947, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &551915683
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551915678}
   m_CullTransparentMesh: 0
 --- !u!1 &776732191
 GameObject:
@@ -1243,6 +1408,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797243120}
   m_CullTransparentMesh: 0
+--- !u!1 &846758672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 846758674}
+  - component: {fileID: 846758673}
+  m_Layer: 0
+  m_Name: SkillButtonAssigner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &846758673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846758672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42336f20f31c1604e992345e3f25aa42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &846758674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846758672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &880620740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,7 +1520,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5/5
+  m_Text: 0/1
 --- !u!222 &880620743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1550,7 +1758,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1030237372}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1751553698}
+        m_MethodName: SelectPlayer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1030237372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1676,6 +1895,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1221069235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1221069236}
+  - component: {fileID: 1221069238}
+  - component: {fileID: 1221069237}
+  m_Layer: 5
+  m_Name: BorderAddedPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1221069236
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221069235}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 551915679}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: -12}
+  m_SizeDelta: {x: 150, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1221069237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221069235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ae2d1015e15df4abab1d825856a6a60c, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1221069238
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221069235}
+  m_CullTransparentMesh: 0
 --- !u!1 &1255201910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,7 +2038,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5/5
+  m_Text: 0/3
 --- !u!222 &1255201913
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1907,6 +2200,84 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294832327}
+  m_CullTransparentMesh: 0
+--- !u!1 &1526684583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526684584}
+  - component: {fileID: 1526684586}
+  - component: {fileID: 1526684585}
+  m_Layer: 5
+  m_Name: TextAddedPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1526684584
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526684583}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 551915679}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: -12}
+  m_SizeDelta: {x: 15, y: 16}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1526684585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526684583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 9
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 9
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 0/1
+--- !u!222 &1526684586
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526684583}
   m_CullTransparentMesh: 0
 --- !u!1 &1679056699
 GameObject:
@@ -2084,9 +2455,9 @@ MonoBehaviour:
   requiredSkillPoints: 0
   skillTreeController: {fileID: 375581929}
   skills:
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
+  - {fileID: 11400000, guid: 178fd32caf520874593ad5ae21c98753, type: 2}
+  - {fileID: 11400000, guid: 09e5e5f460c691c4681d27631239ed42, type: 2}
+  - {fileID: 11400000, guid: 119c4a53c503ffb46a6d4865bf04b049, type: 2}
   unlockableSkills:
   - {fileID: 162216186}
   skillName: Stone Skin
@@ -2372,13 +2743,12 @@ MonoBehaviour:
   requiredSkillPoints: 0
   skillTreeController: {fileID: 375581929}
   skills:
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  - {fileID: 11400000, guid: ab28ca83d6b16274b83e6128811a4b5b, type: 2}
-  unlockableSkills:
-  - {fileID: 551395705}
+  - {fileID: 11400000, guid: d21cee01c72600c47afa25b523d8be76, type: 2}
+  - {fileID: 11400000, guid: 93b0bc00ba4928849a95c6f0e23fc9da, type: 2}
+  - {fileID: 11400000, guid: 7013480ac1783fd4bad31b1247d20eb7, type: 2}
+  - {fileID: 11400000, guid: 7c040736b02145d46bd34ecec0159f91, type: 2}
+  - {fileID: 11400000, guid: 8f7adff2770da1d428a37f01e24063a9, type: 2}
+  unlockableSkills: []
   skillName: Fireball Mastery
 --- !u!1 &2038565327
 GameObject:
@@ -2461,7 +2831,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2038565330}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1751553698}
+        m_MethodName: SelectPlayer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2038565330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2634,7 +3015,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5/5
+  m_Text: 0/3
 --- !u!222 &2113151138
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2712,7 +3093,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5/5
+  m_Text: 0/5
 --- !u!222 &2117881188
 CanvasRenderer:
   m_ObjectHideFlags: 0

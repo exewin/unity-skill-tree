@@ -13,7 +13,7 @@ namespace SkillTreeProject
         private int addedSkillPoints = 0;
         public int requiredSkillPoints;
 
-        private bool _hasRequiredSkill;
+        private bool _hasRequiredSkill = true;
         public bool hasRequiredSkill 
         {
             get => _hasRequiredSkill;
@@ -42,16 +42,27 @@ namespace SkillTreeProject
         void Awake()
         { 
             UpdateText();
-            skillTreeController.AddSkill(this);
+            skillTreeController.skillButtonsInTree.Add(this);
+
+            foreach(var unlockableSkill in unlockableSkills)
+            {
+                unlockableSkill.hasRequiredSkill = false;
+            }
         }
 
 
-        void OnValidate() => gameObject.name = skillName;
+        void OnValidate()
+        {
+            gameObject.name = skillName;
+            if(!addedSkillPointsText) return;
+
+            UpdateText();
+        }
 
         public void AddPoint()
         {
             if(addedSkillPoints>=skills.Count) return;
-
+            
             addSkillEvent?.Invoke(skills[addedSkillPoints]);
             skillTreeController.pointsInTree++;
             addedSkillPoints++;
@@ -76,7 +87,7 @@ namespace SkillTreeProject
         }
 
 
-        private void Lock() => GetComponent<Button>().interactable = false;
+        public void Lock() => GetComponent<Button>().interactable = false;
 
         private void AttemptUnlock()
         {

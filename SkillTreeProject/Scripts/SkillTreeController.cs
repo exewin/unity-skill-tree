@@ -24,11 +24,10 @@ namespace SkillTreeProject
         }
 
         private List<SkillButton> _skillButtonsInTree = new List<SkillButton>();
+        public List<SkillButton> skillButtonsInTree{get => _skillButtonsInTree; set => _skillButtonsInTree = value;}
 
-        public void AddSkill(SkillButton skillButton)
-        {
-            _skillButtonsInTree.Add(skillButton);
-        }
+
+
     }
 }
 
