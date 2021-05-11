@@ -6,10 +6,7 @@ using SkillTreeProject;
 [CreateAssetMenu(fileName = "Skill", menuName = "new Skill")]
 public class Skill : ScriptableObject
 {
-    protected SkillTreeController _skillTreeControllerMembership;
-    public SkillTreeController skillTreeControllerMembership
-    {
-        get => _skillTreeControllerMembership;
-        set => _skillTreeControllerMembership = value;
-    }
+
+    public SkillTree skillTreeMembership;
+
 }

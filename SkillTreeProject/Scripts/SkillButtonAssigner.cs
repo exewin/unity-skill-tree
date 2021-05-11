@@ -9,11 +9,6 @@ namespace SkillTreeProject
 
         public static List<SkillTreeController> skillTreeControllers = new List<SkillTreeController>();
 
-        void Awake()
-        {
-
-        }
-
         private void OnEnable()
         {
             PlayerChanger.playerChangeEvent+=AssignSkillsToButtons;
@@ -26,15 +21,28 @@ namespace SkillTreeProject
 
         private void AssignSkillsToButtons()
         {
-            foreach(var tree in skillTreeControllers)
+            List<Skill> playerSkills = Players.selectedPlayer.skills;
+            foreach(var treeController in skillTreeControllers)
             {
-                foreach(var skillButton in tree.skillButtonsInTree)
+                treeController.pointsInTree = 0;
+                foreach(var skillButton in treeController.skillButtonsInTree)
                 {
-                    //Players.selectedPlayer
-                    skillButton.Lock();
+                    skillButton.ResetButton();
+                    List<Skill> buttonSkills = skillButton.skills;
+
+                    for(int i = buttonSkills.Count-1; i >= 0; i--)
+                    {
+                        if(playerSkills.Contains(buttonSkills[i]))
+                        {
+                            treeController.pointsInTree += i+1;
+                            skillButton.addedSkillPoints = i+1;
+                            break;
+                        }
+                    }
                 }
             }
         }
+
 
     }
 }
