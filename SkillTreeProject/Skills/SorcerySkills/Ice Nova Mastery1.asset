@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 553a411be49227849a44ccb47985f70a, type: 3}
-  m_Name: Nature Blast2
+  m_Name: Ice Nova Mastery1
   m_EditorClassIdentifier: 
-  skillTreeMembership: {fileID: 11400000, guid: 77c8796051b563f44bafdb5ec2cc58af,
+  skillTreeMembership: {fileID: 11400000, guid: fd991d92bb5bafb499d01e923da75b88,
     type: 2}
+  icon: {fileID: 21300000, guid: 6f98b3e70c3ad8a48a0396785dad48e8, type: 3}

@@ -76,17 +76,24 @@ namespace SkillTreeProject
         [SerializeField] private List<SkillButton> unlockableSkills = new List<SkillButton>();
         [SerializeField] private string skillName;
 
+        void Awake()
+        {
+            if(!skillTreeController.skillButtonsInTree.Contains(this))
+                skillTreeController.skillButtonsInTree.Add(this);
+        }
+
         void Start()
         {
             ResetButton();
-
-            if(!skillTreeController.skillButtonsInTree.Contains(this))
-                skillTreeController.skillButtonsInTree.Add(this);
-                
         }
 
         void OnValidate()
         {
+            if(gameObject.scene.rootCount == 0) return;
+            if(!skillTreeController) return;
+
+
+
             if(!skillTreeController.skillButtonsInTree.Contains(this))
                 skillTreeController.skillButtonsInTree.Add(this);
 
@@ -100,6 +107,8 @@ namespace SkillTreeProject
         {
             foreach(var unlockableSkill in unlockableSkills)
             {
+                if(!unlockableSkill) return;
+                
                 Gizmos.color = Color.blue;
                 Gizmos.DrawLine(transform.position, unlockableSkill.transform.position);
             }
@@ -122,7 +131,6 @@ namespace SkillTreeProject
             else
                 hasRequiredPoints=true;
 
-            hasRequiredSkill=true;
             foreach(var unlockableSkill in unlockableSkills)
             {
                 unlockableSkill.hasRequiredSkill = false;

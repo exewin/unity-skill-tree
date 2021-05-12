@@ -4,11 +4,8 @@ using UnityEngine;
 
 namespace SkillTreeProject
 {
-    public class SkillButtonAssigner : MonoBehaviour
+    public class SkillButtonsAssigner : MonoBehaviour
     {
-
-        public static List<SkillTreeController> skillTreeControllers = new List<SkillTreeController>();
-
         private void OnEnable()
         {
             PlayerChanger.playerChangeEvent+=AssignSkillsToButtons;
@@ -22,12 +19,15 @@ namespace SkillTreeProject
         private void AssignSkillsToButtons()
         {
             List<Skill> playerSkills = Players.selectedPlayer.skills;
-            foreach(var treeController in skillTreeControllers)
+            foreach(var treeController in SkillTreeControllers.skillTreeControllers)
             {
                 treeController.pointsInTree = 0;
                 foreach(var skillButton in treeController.skillButtonsInTree)
-                {
+                { 
                     skillButton.ResetButton();
+                }
+                foreach(var skillButton in treeController.skillButtonsInTree)
+                {
                     List<Skill> buttonSkills = skillButton.skills;
 
                     for(int i = buttonSkills.Count-1; i >= 0; i--)

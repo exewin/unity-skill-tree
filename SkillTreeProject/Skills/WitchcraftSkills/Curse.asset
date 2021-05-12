@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillTreeMembership: {fileID: 11400000, guid: 77c8796051b563f44bafdb5ec2cc58af,
     type: 2}
+  icon: {fileID: 21300000, guid: 2531e15fe967a354d9d28c9cfc1d71ca, type: 3}

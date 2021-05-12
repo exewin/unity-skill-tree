@@ -8,5 +8,6 @@ public class Skill : ScriptableObject
 {
 
     public SkillTree skillTreeMembership;
+    public Sprite icon;
 
 }

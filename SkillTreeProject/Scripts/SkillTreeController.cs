@@ -10,7 +10,7 @@ namespace SkillTreeProject
 
         [SerializeField] private Text pointsInTreeText;
         [SerializeField] private Text titleText;
-        [SerializeField] private SkillTree skillTree;
+        public SkillTree skillTree;
 
         private int _pointsInTree;
         public int pointsInTree 
@@ -31,12 +31,21 @@ namespace SkillTreeProject
         }
 
         private List<SkillButton> _skillButtonsInTree = new List<SkillButton>();
-        public List<SkillButton> skillButtonsInTree{get => _skillButtonsInTree; set => _skillButtonsInTree = value;}
+        public List<SkillButton> skillButtonsInTree
+        {
+            get => _skillButtonsInTree;
+            set 
+            {
+                _skillButtonsInTree = value;
+            }
+        }
 
         void OnValidate()
         {
+            if(gameObject.scene.rootCount == 0) return;
             UpdateTitleText();
         }
+        void Awake() => SkillTreeControllers.skillTreeControllers.Add(this);
 
         void UpdateTitleText()
         {
