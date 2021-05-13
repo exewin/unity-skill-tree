@@ -15,3 +15,6 @@ MonoBehaviour:
   skillTreeMembership: {fileID: 11400000, guid: a7f8704aba473ea4b9ff3d1b44658105,
     type: 2}
   icon: {fileID: 21300000, guid: d91ce643b75a45f47baee6493da5d705, type: 3}
+  functionalities:
+  - functionality: 1
+    percentageValue: 5
