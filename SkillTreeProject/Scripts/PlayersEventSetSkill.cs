@@ -17,6 +17,6 @@ using SkillTreeProject;
 
         private void SetSkill(Skill skill)
         {
-            PlayerManager.GetInstance().selectedPlayer.AddSkill(skill);
+            PlayerManager.GetInstance().selectedPlayer.skills.Add(skill);
         }
     }

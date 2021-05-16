@@ -5,24 +5,28 @@ using SkillTreeProject;
 
 public class Player : MonoBehaviour
 {
-    public List<Skill> skills = new List<Skill>();
+    private List<Skill> _skills = new List<Skill>();
+    public List<Skill> skills
+    {
+        get => _skills;
+        set => _skills = value;
+    }
+
+
+
     public List<SkillTree> availableSkillTrees = new List<SkillTree>();
 
     void Awake() => PlayerManager.GetInstance().players.Add(this);
 
 
-    public void AddSkill(Skill skill)
-    {
-        skills.Add(skill);
-    }
 
-    //test mace damage
+    //test weapon damage
+    public Functionality functionalityToTest;
     void Update()
     {
-        
         if(Input.GetKeyDown(KeyCode.A))
         {
-            Debug.Log(CalculateStat.GetDamage(this));
+            Debug.Log(gameObject.name +"s "+ functionalityToTest.ToString() + " is " + CalculateStat.GetValue(this));
         }
     }
     //

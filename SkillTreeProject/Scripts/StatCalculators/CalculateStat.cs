@@ -4,11 +4,19 @@ using UnityEngine;
 
 public static class CalculateStat
 {
-    public static float GetDamage(Player player)
+    public static float GetValue(Player player)
     {
-        //you can check here what weapon player has etc.
-        //example only shows mace damage
-        return StatMaceDamage.GetDamage(player);
+        float value = 1f;
+        foreach(Skill skill in player.skills)
+        {
+            foreach(SkillFunctionality skillFunctionality in skill.functionalities)
+            {
+                if(skillFunctionality.functionality == player.functionalityToTest)
+                {
+                    value=value*(1+(skillFunctionality.percentageValue/100));
+                }
+            }
+        }
+        return value;
     }
-
 }

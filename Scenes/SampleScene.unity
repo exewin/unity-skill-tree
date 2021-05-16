@@ -3496,10 +3496,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2225ad1cf8c78b048b4d111d37a6b449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skills: []
   availableSkillTrees:
   - {fileID: 11400000, guid: a7f8704aba473ea4b9ff3d1b44658105, type: 2}
   - {fileID: 11400000, guid: fd991d92bb5bafb499d01e923da75b88, type: 2}
+  functionalityToTest: 2
 --- !u!4 &1109761933
 Transform:
   m_ObjectHideFlags: 0
@@ -4587,10 +4587,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2225ad1cf8c78b048b4d111d37a6b449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skills: []
   availableSkillTrees:
   - {fileID: 11400000, guid: a7f8704aba473ea4b9ff3d1b44658105, type: 2}
   - {fileID: 11400000, guid: 77c8796051b563f44bafdb5ec2cc58af, type: 2}
+  functionalityToTest: 1
 --- !u!4 &1716000670
 Transform:
   m_ObjectHideFlags: 0

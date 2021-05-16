@@ -20,10 +20,3 @@ public struct SkillFunctionality
     public Functionality functionality;
     public float percentageValue;
 }
-
-public enum Functionality
-{
-    maxHealthPoints,
-    maceDamage,
-    swordDamage
-}
