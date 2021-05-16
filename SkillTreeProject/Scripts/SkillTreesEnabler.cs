@@ -8,11 +8,11 @@ namespace SkillTreeProject
     {
         private void EnableTrees()
         {   
-            foreach(SkillTreeController tree in SkillTreeControllers.skillTreeControllers)
+            foreach(SkillTreeController tree in SkillTreeControllerManager.GetInstance().skillTreeControllers)
             {
                 if(!tree) return;
                 
-                if(Players.selectedPlayer.availableSkillTrees.Contains(tree.skillTree))
+                if(PlayerManager.GetInstance().selectedPlayer.availableSkillTrees.Contains(tree.skillTree))
                     tree.gameObject.SetActive(true);
                 else
                     tree.gameObject.SetActive(false);

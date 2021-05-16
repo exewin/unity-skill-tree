@@ -18,8 +18,8 @@ namespace SkillTreeProject
 
         private void AssignSkillsToButtons()
         {
-            List<Skill> playerSkills = Players.selectedPlayer.skills;
-            foreach(var treeController in SkillTreeControllers.skillTreeControllers)
+            List<Skill> playerSkills = PlayerManager.GetInstance().selectedPlayer.skills;
+            foreach(var treeController in SkillTreeControllerManager.GetInstance().skillTreeControllers)
             {
                 treeController.pointsInTree = 0;
                 foreach(var skillButton in treeController.skillButtonsInTree)

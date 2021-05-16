@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public List<Skill> skills = new List<Skill>();
     public List<SkillTree> availableSkillTrees = new List<SkillTree>();
 
-    void Awake() => Players.players.Add(this);
+    void Awake() => PlayerManager.GetInstance().players.Add(this);
 
 
     public void AddSkill(Skill skill)

@@ -45,7 +45,7 @@ namespace SkillTreeProject
             if(gameObject.scene.rootCount == 0) return;
             UpdateTitleText();
         }
-        void Awake() => SkillTreeControllers.skillTreeControllers.Add(this);
+        void Awake() => SkillTreeControllerManager.GetInstance().skillTreeControllers.Add(this);
 
         void UpdateTitleText()
         {

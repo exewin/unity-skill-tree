@@ -10,7 +10,7 @@ public class PlayerChanger : MonoBehaviour
 
     public void SelectPlayer(int index)
     {
-        Players.selectedPlayer = Players.players[index];
+        PlayerManager.GetInstance().SelectPlayer(index);
         playerChangeEvent?.Invoke();
     }
 

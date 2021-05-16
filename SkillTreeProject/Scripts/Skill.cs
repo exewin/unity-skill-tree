@@ -12,10 +12,6 @@ public class Skill : ScriptableObject
     public Sprite icon;
     public List<SkillFunctionality> functionalities = new List<SkillFunctionality>();
 
-
-
-
-
 }
 
 [Serializable]
