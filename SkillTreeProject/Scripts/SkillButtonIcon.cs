@@ -7,9 +7,10 @@ namespace SkillTreeProject
 {
     public class SkillButtonIcon : MonoBehaviour
     {
+        [SerializeField] private SkillButton skillButton;
         void OnValidate()
         {
-            SkillButton skillButton = GetComponent<SkillButton>();
+            if(!skillButton) return;
             GetComponent<Image>().sprite = skillButton.skills[0].icon;
         }
     }
