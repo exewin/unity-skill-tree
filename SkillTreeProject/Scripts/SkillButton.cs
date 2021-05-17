@@ -148,7 +148,10 @@ namespace SkillTreeProject
         }
 
 
-        private void Lock() => GetComponent<Button>().interactable = false;
+        private void Lock()
+        {
+            GetComponent<Button>().interactable = false;
+        }
 
         private void AttemptUnlock()
         {
