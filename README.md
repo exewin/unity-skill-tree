@@ -15,7 +15,7 @@ world of warcraft-like skill/talent tree in unity c#
 - Skill Buttons can be locked/unlocked if they meet requirements: 
 1. Adequate ```SkillTreeController``` has enough ```int pointsInTree```
 2. Adequate ```SkillButton``` that has this concrete ```SkillButton``` in unlockable list, must be maxed out
-- Skills are ```ScriptableObject``` with some possible functionality. See ```StatCalculator.cs```, ```StatMaceDamage.cs``` and ```Player.cs``` for example usage. Please note that this code only presents quick way of practical use of ```Skill.cs``` and is not designed for bigger scale.
+- Skills are ```ScriptableObject``` with some possible functionality. See ```StatCalculator.cs```, ```Skill.cs``` and ```Player.cs``` for example usage.
 
 #### used 3rd party assets:
 - https://assetstore.unity.com/packages/2d/gui/icons/basic-rpg-icons-181301
